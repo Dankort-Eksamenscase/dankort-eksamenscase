@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.img-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+  height: 610px;
+}
+
+.hero-section {
+  position: relative;
+  padding-bottom: 500px;
+}
+
+.index-photo-1 {
+  position: absolute;
+  left: 4%;
+  z-index: 10;
+  width: 340px;
+  top: 40%;
+}
+.index-photo-2 {
+  position: absolute;
+  left: 54%;
+  z-index: 10;
+  width: 140px;
+  top: 52%;
+}
+.index-photo-3 {
+  position: absolute;
+  left: 62%;
+  width: 210px;
+  bottom: 39%;
+}
+
+.kampagner-knap {
+  position: absolute;
+  bottom: 10%;
+  left: 13%;
+  padding: 12px 24px;
+  background-color: #e21e27;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 30%;
+}
