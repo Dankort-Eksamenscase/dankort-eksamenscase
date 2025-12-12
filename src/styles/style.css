@@ -131,11 +131,30 @@ li {
 }
 .forbrugsrejse-body {
   background-color: #21303f;
+  background-image: url(/img/linje.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.forbrugsrejse-body h1,
-p {
-  color: white;
-  padding: 2%;
+
+.ks1,
+.ks2,
+.ks3,
+.ks4,
+.ks5,
+.ks6,
+.ks7,
+.ks8 {
+  background-color: #f4916d;
+  margin-top: 10%;
+  margin-inline: 5%;
+  border-radius: 30px;
+  padding-inline: 20%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.linje-baggrund {
+  display: blockj;
+  margin: auto;
 }
 @media (min-width: 800px) {
   /* menu */
