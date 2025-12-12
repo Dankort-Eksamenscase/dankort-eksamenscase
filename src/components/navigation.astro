@@ -1,0 +1,27 @@
+<nav class="nav">
+  <div class="nav__logo">
+    <a href="/">
+      <img src="/img/DK-logo.png" alt="Logo" />
+    </a>
+  </div>
+  <button class="nav__burger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav__links">
+    <a href="/omos">kampagner</a>
+    <a href="/virksomheder">Forbrugsrejse</a>
+    <a href="/app">Fakta</a>
+  </div>
+</nav>
+
+<script type="module" client:load>
+  const burger = document.querySelector(".nav__burger");
+  const menu = document.querySelector(".nav__links");
+
+  burger.addEventListener("click", () => {
+    menu.classList.toggle("open");
+  });
+</script>
