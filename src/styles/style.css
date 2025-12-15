@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  border-radius: 30px;
 }
 /* footer */
 .footer {
@@ -153,11 +152,6 @@ li {
   text-align: center;
   margin-bottom: 10%;
 }
-.linje-baggrund {
-  display: block;
-  margin: auto;
-}
-
 .cards {
   background-color: #21303f;
   display: block;
@@ -170,8 +164,81 @@ li {
   padding: 2%;
   margin: 2%;
 }
-
+a {
+  color: white;
+  text-decoration: none;
+}
 @media (min-width: 800px) {
+  .ks1,
+  .ks2,
+  .ks3,
+  .ks4,
+  .ks5,
+  .ks6,
+  .ks7,
+  .ks8 {
+    background-color: #f4916d;
+    margin-top: 10%;
+    margin-inline: 0%;
+    border-radius: 30px;
+    padding-inline: 1%;
+    text-align: left;
+    margin-bottom: 10%;
+    font-size: x-large;
+  }
+  h4 {
+    font-size: xx-large;
+    text-align: center;
+  }
+  .ks1 {
+    position: relative;
+    margin-inline: 35%;
+    left: 20%;
+  }
+  .ks2 {
+    position: relative;
+    margin-inline: 35%;
+    left: 10%;
+  }
+  .ks3 {
+    position: relative;
+    margin-inline: 35%;
+    left: -5%;
+  }
+  .ks4 {
+    position: relative;
+    margin-inline: 35%;
+    left: -5%;
+  }
+  .ks5 {
+    position: relative;
+    margin-inline: 35%;
+    left: 20%;
+  }
+  .ks6 {
+    position: relative;
+    margin-inline: 35%;
+    left: 15%;
+  }
+  .ks7 {
+    position: relative;
+    margin-inline: 35%;
+  }
+  .ks8 {
+    position: relative;
+    margin-inline: 35%;
+    left: -10%;
+  }
+  a :hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+  .forbrugsrejse-body {
+    background-color: #21303f;
+    background-image: url(/public/img/group30.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

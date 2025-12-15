@@ -12,6 +12,8 @@ export async function getStaticPaths() {
   const res = await fetch(url, options);
   const supaData = await res.json();
 
+  console.log("supaData", supaData);
+
   return supaData.map((Marketingsstrategier) => {
     return {
       params: { slug: Marketingsstrategier.slug },
