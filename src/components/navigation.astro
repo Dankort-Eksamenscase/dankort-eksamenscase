@@ -4,6 +4,7 @@
       <img src="/img/DK-logo.png" alt="Logo" />
     </a>
   </div>
+
   <button class="nav__burger" aria-label="Menu">
     <span></span>
     <span></span>
@@ -11,17 +12,37 @@
   </button>
 
   <div class="nav__links">
-    <a href="/omos">kampagner</a>
+    <!-- Dropdown menu -->
+    <div class="nav-item">
+      <a href="#kort" class="dropdown-toggle">Marketingsstrategier</a>
+      <ul class="dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </div>
     <a href="/forbrugsrejse">Forbrugsrejse</a>
-    <a href="/app">Fakta</a>
+    <a href="/app">Om kampagnen</a>
   </div>
 </nav>
 
 <script type="module" client:load>
   const burger = document.querySelector(".nav__burger");
   const menu = document.querySelector(".nav__links");
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+  const dropdownMenu = document.querySelector(".dropdown");
 
+  // Burger-menu toggling
   burger.addEventListener("click", () => {
     menu.classList.toggle("open");
+  });
+
+  // Mobile dropdown toggle
+  dropdownToggle.addEventListener("click", (e) => {
+    if (window.innerWidth < 800) {
+      // kun på mobile
+      e.preventDefault();
+      dropdownMenu.classList.toggle("open");
+    }
   });
 </script>

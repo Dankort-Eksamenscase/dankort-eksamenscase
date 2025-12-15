@@ -4,12 +4,19 @@
   padding: 0;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* footer */
 .footer {
   gap: 1%;
   margin: 1%;
 }
 
+h1,
+h2 {
+  color: white;
+}
 ul {
   display: inline-block;
   text-align: left;
@@ -115,6 +122,35 @@ li {
   transition: right 0.3s ease-in-out;
   z-index: 999;
 }
+.nav-item .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f5f0e7;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  border-radius: 8px;
+  min-width: 150px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item .dropdown li a {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-item .dropdown li a:hover {
+  background-color: #ddd;
+}
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
 
 .nav__links.open {
   right: 0;
@@ -165,8 +201,15 @@ li {
   margin: 2%;
 }
 a {
+  text-decoration: none;
+}
+.cards-knap {
   color: white;
   text-decoration: none;
+}
+
+.nav-item .dropdown li a:hover {
+  background-color: #ddd;
 }
 @media (min-width: 800px) {
   .ks1,
@@ -185,6 +228,16 @@ a {
     text-align: left;
     margin-bottom: 10%;
     font-size: x-large;
+  }
+  .nav-item:hover .dropdown {
+    display: block;
+  }
+
+  .h-forbrugsrejse {
+    position: relative;
+    top: 30%;
+    padding-right: 50%;
+    left: 5%;
   }
   h4 {
     font-size: xx-large;
