@@ -1,0 +1,27 @@
+---
+import Pagelayout from "../../layout/pagelayout.astro";
+
+export async function getStaticPaths() {
+  const url = "https://ijtlezplttycjslwxysk.supabase.co/rest/v1/Marketingsstrategier";
+  const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqdGxlenBsdHR5Y2pzbHd4eXNrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU0NDg4OTEsImV4cCI6MjA4MTAyNDg5MX0.P-yOEe5G0FoE8Wt5nNe2eYvCKR_nA6q1gTM-Gagytp0";
+  const options = {
+    headers: {
+      apikey: key,
+    },
+  };
+  const res = await fetch(url, options);
+  const supaData = await res.json();
+
+  return supaData.map((Marketingsstrategier) => {
+    return {
+      params: { slug: Marketingsstrategier.slug },
+      props: { Marketingsstrategier },
+    };
+  });
+}
+const { Marketingsstrategier } = Astro.props;
+---
+
+<Pagelayout title=`${Marketingsstrategier.slug}`>
+  <header>{Marketingsstrategier.strateginavn}</header>
+</Pagelayout>

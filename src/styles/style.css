@@ -153,10 +153,31 @@ li {
   margin-bottom: 10%;
 }
 .linje-baggrund {
-  display: blockj;
+  display: block;
   margin: auto;
 }
+
+.cards {
+  background-color: #21303f;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2%;
+  margin: 2%;
+}
+
 @media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 2%;
+    margin-bottom: 5%;
+  }
   /* menu */
   .nav__burger {
     display: none;

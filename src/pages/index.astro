@@ -1,5 +1,18 @@
 ---
 import PageLayout from "../layout/pagelayout.astro";
+import Card from "../components/card.astro";
+
+const url = "https://ijtlezplttycjslwxysk.supabase.co/rest/v1/Marketingsstrategier";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqdGxlenBsdHR5Y2pzbHd4eXNrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU0NDg4OTEsImV4cCI6MjA4MTAyNDg5MX0.P-yOEe5G0FoE8Wt5nNe2eYvCKR_nA6q1gTM-Gagytp0";
+const options = {
+  headers: {
+    apikey: key,
+  },
+};
+
+const res = await fetch(url, options);
+const supaData = await res.json();
+console.log("supaData", supaData);
 ---
 
 <PageLayout>
@@ -20,10 +33,8 @@ import PageLayout from "../layout/pagelayout.astro";
   <h2>Tag kontrollen tilbage over manipulerende marketing</h2>
   <p>Bliv bevidst om de strategier, marketingbranchen bruger til dagligt for at påvirke dit forbrug. Når du kender mekanismerne bag manipulationen, bliver det langt lettere at spotte dem i hverdagen og undgå at blive fanget af en forførende og konstant pressende markedsføring.</p>
   <h2>Lær at gennemskue tre populære marketingsstrategier</h2>
-  <img src="/img/smashed.png" alt="smashed" />
-  <h3>Planlagt forældelse</h3>
-  <img src="/img/flok.png" alt="flok" />
-  <h3>FOMO</h3>
-  <img src="/img/behov.png" alt="behov" />
-  <h3>Falske behov</h3>
+
+  <div class="grid_1-1-1">
+    {supaData.map((Marketingsstrategier) => <Card data={Marketingsstrategier} />)}
+  </div>
 </PageLayout>
