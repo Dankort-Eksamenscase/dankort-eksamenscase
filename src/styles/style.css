@@ -14,7 +14,7 @@ html {
 }
 
 h1,
-h2 {
+.subheader {
   color: white;
 }
 ul {
