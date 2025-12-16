@@ -25,5 +25,16 @@ const { Marketingsstrategier } = Astro.props;
 ---
 
 <Pagelayout title=`${Marketingsstrategier.slug}`>
+  <section>
+    <div class="dynamisk-hero">
+      <img class="heroimg" src={Marketingsstrategier.herobillede} alt="cardbillede af hero" />
+      <div class="quotes">
+        <h1 class="h-dynamisk">
+          <h2 class="h-dynamisk">{Marketingsstrategier.strateginavn}</h2>
+          <h1 class="h-dynamisk">{Marketingsstrategier.strategiquote}</h1>
+        </h1>
+      </div>
+    </div>
+  </section>
   <header class="strategier">{Marketingsstrategier.strateginavn}</header>
 </Pagelayout>

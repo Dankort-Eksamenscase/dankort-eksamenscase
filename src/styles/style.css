@@ -2,17 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
+}
+.heroimg {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+}
+section {
+  overflow-x: hidden;
+}
+.h-dynamisk {
+  position: relative;
+  left: 5%;
+  color: white;
+  padding-top: 15%;
+  font-size: xx-large;
+  padding-right: 50%;
 }
 /* footer */
 .footer {
   gap: 1%;
   margin: 1%;
 }
-
+.heroimg {
+  width: 100%;
+  height: auto;
+}
 h1,
 .subheader {
   color: white;
@@ -139,39 +158,11 @@ li a:hover {
   transition: right 0.3s ease-in-out;
   z-index: 999;
 }
-.nav-item .dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f5f0e7;
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  border-radius: 8px;
-  min-width: 150px;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.nav-item .dropdown li a {
-  display: block;
-  padding: 10px 15px;
-  color: #000;
-  text-decoration: none;
-}
-
-.nav-item .dropdown li a:hover {
-  background-color: #ddd;
-}
-.nav-item {
-  position: relative;
-  display: inline-block;
-}
 
 .nav__links.open {
   right: 0;
 }
+
 .forbrugsrejse-hero {
   position: relative;
   width: 100%;
@@ -219,16 +210,32 @@ li a:hover {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 .cards-knap {
   color: white;
   text-decoration: none;
 }
-
-.nav-item .dropdown li a:hover {
-  background-color: #ddd;
+.dropdown-content {
+  display: none;
+}
+.dropbtn {
+  background-color: #f5f0e7;
+  color: black;
+  padding: 16px;
+  font-size: large;
+  border: none;
+  cursor: pointer;
 }
 @media (min-width: 800px) {
+  .h-dynamisk {
+    position: relative;
+    left: 5%;
+    color: white;
+    padding-top: 15%;
+    font-size: xxx-large;
+    padding-right: 50%;
+  }
   .ks1,
   .ks2,
   .ks3,
@@ -358,5 +365,44 @@ a {
   .rød-boks {
     border-radius: 30px;
     height: 250px;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Show the dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown {
+    position: relative;
+  }
+
+  /* Style the dropdown button */
+
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e21e27;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .dropbtn {
+    background-color: #e21e27;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
   }
 }
