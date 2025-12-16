@@ -3,6 +3,11 @@ import Footer from "../components/footer.astro";
 import Navigation from "../components/navigation.astro";
 import "../styles/style.css";
 import "../styles/index.css";
+
+const url = "https://ijtlezplttycjslwxysk.supabase.co/rest/v1/navigation?select=*";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqdGxlenBsdHR5Y2pzbHd4eXNrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU0NDg4OTEsImV4cCI6MjA4MTAyNDg5MX0.P-yOEe5G0FoE8Wt5nNe2eYvCKR_nA6q1gTM-Gagytp0";
+const res = await fetch(url, { headers: { apikey: key } });
+const navData = await res.json();
 ---
 
 <html lang="en">
@@ -13,7 +18,7 @@ import "../styles/index.css";
     <title>astro</title>
   </head>
   <body>
-    <Navigation />
+    <Navigation data={navData} />
     <slot />
     <Footer />
   </body>
