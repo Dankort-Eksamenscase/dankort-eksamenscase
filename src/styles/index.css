@@ -87,3 +87,48 @@
   max-width: 80%;
   padding: 10px;
 }
+
+@media (min-width: 800px) {
+  .index-photo-1 {
+    position: absolute;
+    left: 40%;
+    z-index: 10;
+    width: 380px;
+    top: 23%;
+  }
+
+  .index-photo-2 {
+    position: absolute;
+    left: 62%;
+    z-index: 10;
+    width: 170px;
+    top: 48%;
+  }
+  .index-photo-3 {
+    position: absolute;
+    left: 70%;
+    width: 250px;
+    bottom: 15%;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
+  .gul-kasse {
+    background-color: #ffd998;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    line-height: 150%;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 2%;
+    margin-bottom: 5%;
+  }
+}
