@@ -1,0 +1,11 @@
+---
+const { variant, data } = Astro.props;
+console.log(data);
+---
+
+<a class="cards-knap" href={`/Marketingsstrategier/${data.slug}`}>
+  <article class="cards">
+    <img class="cardimg" src={data.cardbillede} />
+    <h2>{data.strateginavn}</h2>
+  </article>
+</a>
