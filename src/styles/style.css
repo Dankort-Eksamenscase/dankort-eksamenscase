@@ -361,11 +361,21 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5%;
     text-align: left;
-    height: 250px;
+    height: 350px;
   }
+
+  .blå-boks p.footer-bold {
+    margin-bottom: 25px; /* juster tallet til hvor meget afstand du vil have */
+  }
+
+  /* Afstand mellem hvert punkt i listen */
+  .blå-boks li {
+    margin-bottom: 18px; /* afstand mellem hvert punkt */
+  }
+
   .rød-boks {
     border-radius: 30px;
-    height: 250px;
+    height: 350px;
   }
   .dropdown-content a {
     color: white;
