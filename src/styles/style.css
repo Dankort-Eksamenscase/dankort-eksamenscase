@@ -406,4 +406,11 @@ a {
     border: none;
     cursor: pointer;
   }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2%;
+    margin-bottom: 5%;
+  }
 }
