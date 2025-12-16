@@ -42,6 +42,16 @@ li {
   padding-top: 2%;
   font-size: large;
 }
+
+li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
 .blå-boks {
   border-radius: 30px;
   background-color: #21303f;
