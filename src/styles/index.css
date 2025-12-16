@@ -71,7 +71,7 @@
 
 .index-undertekst {
   padding: 20px;
-  margin: 60px;
+  margin: 20px;
   font-size: 18px;
   line-height: 150%;
 }
@@ -111,6 +111,13 @@
     top: 23%;
   }
 
+  .index-undertekst {
+    padding: 20px;
+    margin: 50px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
   .index-photo-2 {
     position: absolute;
     left: 62%;
@@ -144,5 +151,15 @@
     gap: 2rem;
     margin: 2%;
     margin-bottom: 5%;
+  }
+
+  .kampagner-index {
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
   }
 }
