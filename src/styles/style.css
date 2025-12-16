@@ -6,12 +6,32 @@
 html {
   scroll-behavior: smooth;
 }
+.heroimg {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+}
+section {
+  overflow-x: hidden;
+}
+.h-dynamisk {
+  position: relative;
+  left: 5%;
+  color: white;
+  padding-top: 15%;
+  font-size: xx-large;
+  padding-right: 50%;
+}
 /* footer */
 .footer {
   gap: 1%;
   margin: 1%;
 }
-
+.heroimg {
+  width: 100%;
+  height: auto;
+}
 h1,
 h2 {
   color: white;
@@ -125,6 +145,7 @@ li {
 .nav__links.open {
   right: 0;
 }
+
 .forbrugsrejse-hero {
   position: relative;
   width: 100%;
@@ -173,7 +194,6 @@ li {
 a {
   text-decoration: none;
   color: black;
-  font-size: large;
 }
 .cards-knap {
   color: white;
@@ -191,6 +211,14 @@ a {
   cursor: pointer;
 }
 @media (min-width: 800px) {
+  .h-dynamisk {
+    position: relative;
+    left: 5%;
+    color: white;
+    padding-top: 15%;
+    font-size: xxx-large;
+    padding-right: 50%;
+  }
   .ks1,
   .ks2,
   .ks3,
