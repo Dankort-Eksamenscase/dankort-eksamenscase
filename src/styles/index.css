@@ -134,6 +134,35 @@
   margin-bottom: 10%;
 }
 
+.donkey,
+.gule-stole,
+.gutter,
+.wall {
+  width: 500px;
+  height: auto;
+  display: flex;
+  border-radius: 8px;
+}
+
+.grid_plakater {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolonner */
+  gap: 20px; /* afstand mellem kolonnerne */
+  margin: 21px;
+}
+
+.kolonne {
+  display: flex;
+  flex-direction: column; /* stable billeder lodret */
+  gap: 20px; /* afstand mellem billederne */
+}
+
+.kolonne img {
+  width: 100%; /* fylder kolonnen */
+  height: auto;
+  display: block;
+}
+
 @media (min-width: 800px) {
   .index-photo-1 {
     position: absolute;
@@ -182,6 +211,7 @@
     display: flex;
     gap: 20px;
     padding: 20px;
+    margin-top: 3%;
   }
 
   .gul-kasse {
@@ -215,17 +245,16 @@
     padding: 15px;
     border-radius: 8px 8px 0 0;
     line-height: 170%;
-    margin-right: 71%;
-    margin-left: 4%;
-    margin-top: 6%;
+    margin-left: 1%;
+    margin-top: 3%;
     position: relative;
   }
 
   .gul-kasse-2-h2::after {
     content: "";
     position: absolute;
-    top: 46px;
-    right: 11px;
+    top: 60px;
+    right: -15px;
     width: 30px;
     height: 30px;
     background-color: #ffd998;
@@ -237,9 +266,38 @@
     padding: 20px;
     border-radius: 8px;
     line-height: 170%;
-    margin-right: 4%;
-    margin-left: 4%;
+    margin-left: 1%;
     margin-top: -2%;
     margin-bottom: 5%;
+  }
+
+  .strategi-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* to kolonner */
+    align-items: start; /* top-align kolonner */
+    margin: 40px;
+  }
+
+  .tekst-kolonne {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .billede-kolonne {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolonner med billeder */
+    gap: 20px;
+  }
+
+  .kolonne {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .kolonne img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
