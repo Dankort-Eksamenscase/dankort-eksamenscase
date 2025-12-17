@@ -4,8 +4,10 @@ console.log(data);
 ---
 
 <a class="cards-knap" href={`/Marketingsstrategier/${data.slug}`}>
-  <article class="cards">
-    <img class="cardimg" src={data.cardbillede} alt="cardbillede af card" />
-    <h2>{data.strateginavn}</h2>
-  </article>
+  <div>
+    <article class="cards">
+      <img class="cardimg" src={data.cardbillede} alt="cardbillede af card" />
+      <h2>{data.strateginavn}</h2>
+    </article>
+  </div>
 </a>
