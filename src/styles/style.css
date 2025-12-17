@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
 }
+p {
+  font-size: 20px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 25px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -69,25 +78,26 @@ section {
   padding-bottom: 2%;
 }
 .h2-dynamisk {
-  font-size: x-large;
+  font-size: 25px;
   text-align: center;
   color: white;
   padding-inline: 5%;
 }
 .ks-container {
   padding-top: 10%;
-  margin-inline: 2%;
 }
 .ks ul {
   text-decoration: dotted;
-  padding-left: 3%;
-  margin-top: 2%;
-  gap: 10px;
+  gap: 5%;
+  padding-inline: 5%;
+}
+.ks li {
+  padding-top: 3%;
 }
 .hvader1 {
-  font-size: xx-large;
+  font-size: 50px;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 20%;
   padding-bottom: 5%;
 }
 .dynamisk-img {
@@ -99,8 +109,8 @@ section {
   height: auto;
 }
 .ks h4 {
-  font-size: large;
   padding-top: 6%;
+  text-align: center;
 }
 
 .ks {
@@ -149,6 +159,7 @@ ul {
   display: inline-block;
   text-align: left;
   padding-bottom: 2%;
+  font-size: 20px;
 }
 li {
   color: white;
@@ -315,6 +326,7 @@ li a:hover {
 a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 .cards-knap {
   color: white;
@@ -349,6 +361,7 @@ a {
     margin-bottom: 10%;
     font-size: x-large;
   }
+
   .modstå-ks {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -396,8 +409,18 @@ a {
     left: 5%;
     color: white;
   }
+  .ks p {
+    margin-inline: 5%;
+    padding-top: 5%;
+  }
+
   h4 {
-    font-size: xx-large;
+    text-align: center;
+    font-size: 23px;
+  }
+  .ksh3 {
+    padding-bottom: 2%;
+    padding-top: 5%;
     text-align: center;
   }
   .ks1 {
@@ -480,6 +503,7 @@ a {
 
   ul {
     display: block;
+    font-size: 20px;
   }
   .footer-text {
     text-align: left;
@@ -564,5 +588,16 @@ a {
   .ks-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .ks {
+    position: relative;
+    height: 120%;
+    border-radius: 0 30px 30px 0;
+    width: 110%;
+    z-index: 1;
+    margin-left: 0;
+  }
+  .dynamisk-img {
+    margin-top: 15%;
   }
 }
