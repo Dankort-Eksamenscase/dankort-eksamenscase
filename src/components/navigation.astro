@@ -1,6 +1,12 @@
 ---
-const { variant, data } = Astro.props;
-console.log(data);
+const url = "https://ijtlezplttycjslwxysk.supabase.co/rest/v1/Marketingsstrategier";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqdGxlenBsdHR5Y2pzbHd4eXNrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU0NDg4OTEsImV4cCI6MjA4MTAyNDg5MX0.P-yOEe5G0FoE8Wt5nNe2eYvCKR_nA6q1gTM-Gagytp0";
+
+const res = await fetch(url, {
+  headers: { apikey: key },
+});
+
+const strategier = await res.json();
 ---
 
 <nav class="nav">
@@ -19,12 +25,12 @@ console.log(data);
   <div class="nav__links">
     <div class="dropdown">
       <button class="dropbtn">Marketingsstrategier</button>
+
       <div class="dropdown-content">
-        <a href="#">Link 2</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        {strategier.map((strategi) => <a href={`/Marketingsstrategier/${strategi.slug}`}>{strategi.strateginavn}</a>)}
       </div>
     </div>
+
     <a href="/forbrugsrejse">Forbrugsrejse</a>
     <a href="/app">Om kampagnen</a>
   </div>
