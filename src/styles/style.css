@@ -17,9 +17,12 @@
   display: flex;
   text-align: center;
 }
-
+ul {
+  font-size: 15px;
+}
 p {
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 150%;
 }
 h3 {
   font-size: 30px;
@@ -99,6 +102,7 @@ section {
 }
 .ks-container {
   padding-top: 10%;
+  padding-inline: 3%;
 }
 .ks ul {
   text-decoration: dotted;
@@ -168,6 +172,7 @@ section {
 .sådangørdu {
   text-align: center;
   padding-top: 5%;
+  padding-inline: 5%;
 }
 .hvader {
   font-size: xx-large;
@@ -197,7 +202,6 @@ ul {
   display: inline-block;
   text-align: left;
   padding-bottom: 2%;
-  font-size: 20px;
 }
 li {
   color: white;
@@ -295,6 +299,10 @@ li a:hover {
   background: rgb(255, 255, 255);
   border-radius: 2px;
   transition: all 0.3s ease;
+}
+.ks p {
+  margin-inline: 5%;
+  padding-top: 5%;
 }
 .nav__links {
   display: flex;
@@ -528,10 +536,7 @@ a:hover {
     left: 5%;
     color: white;
   }
-  .ks p {
-    margin-inline: 5%;
-    padding-top: 5%;
-  }
+
   .ksd1 p {
     margin-inline: 5%;
     padding-top: 5%;
@@ -709,6 +714,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 8%;
+    padding-inline: 0;
   }
   .ks {
     position: relative;
@@ -740,7 +746,10 @@ a:hover {
     width: 110%;
     border-radius: 30px;
   }
+  ul {
+    font-size: 20px;
+  }
   p {
-    line-height: 150%;
+    font-size: 20px;
   }
 }
