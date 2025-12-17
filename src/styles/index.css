@@ -319,13 +319,13 @@
   .billede-kolonne {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 kolonner med billeder */
-    gap: 20px;
+    gap: 10px;
   }
 
   .kolonne {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
   }
 
   .kolonne img {
