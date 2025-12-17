@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+.hero-section {
+  overflow-x: hidden;
+}
 hr {
   margin-inline: 15%;
   margin-top: 5%;
