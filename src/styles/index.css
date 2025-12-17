@@ -40,18 +40,18 @@
   bottom: 30%;
 }
 
-.kampagner-knap {
+.marketingsstrategier-knap {
   position: absolute;
   bottom: 10%;
   left: 10%;
-  padding: 18px 36px;
+  padding: 21px 46px;
   background-color: #e21e27;
   color: #ffffff;
   border: none;
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;
-  width: 35%;
+  width: 39%;
 }
 
 .gul-kasse {
@@ -109,6 +109,20 @@
     z-index: 10;
     width: 380px;
     top: 23%;
+  }
+
+  .marketingsstrategier-knap {
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+    padding: 20px 79px;
+    background-color: #e21e27;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    width: 23%;
   }
 
   .index-undertekst {
