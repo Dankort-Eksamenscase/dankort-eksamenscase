@@ -224,7 +224,7 @@ li a:hover {
   display: block;
   width: 26px;
   height: 2px;
-  background: black;
+  background: rgb(255, 255, 255);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
