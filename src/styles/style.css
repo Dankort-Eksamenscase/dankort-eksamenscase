@@ -431,6 +431,13 @@ a {
   .samarbejder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    padding-top: 90px;
+    background-color: #ffe9c3;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
   }
   .h-forbrugsrejse {
     position: relative;
