@@ -6,6 +6,37 @@
 html {
   scroll-behavior: smooth;
 }
+hr {
+  margin-inline: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-top: solid 2px #21303f;
+}
+.samarbejder {
+  width: 100%;
+  height: auto;
+  padding-top: 15%;
+  background-color: #ffe9c3;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 15%;
+}
+.dk-logo-footer {
+  width: 30%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+.a1508-logo {
+  width: 40%;
+  display: flex;
+  margin: auto;
+}
+.ek-logo {
+  width: 40%;
+  display: flex;
+  margin: auto;
+}
 .heroimg {
   width: 100%;
   height: auto;
@@ -300,7 +331,31 @@ a {
   .nav-item:hover .dropdown {
     display: block;
   }
-
+  .dk-logo-footer {
+    width: 50%;
+    margin-top: 20%;
+  }
+  .a1508-logo {
+    width: 60%;
+    margin-top: 15%;
+  }
+  .ek-logo {
+    width: 100%;
+    margin-top: 20%;
+  }
+  hr {
+    display: none;
+  }
+  .vertical {
+    border-left: 6px solid black;
+    height: 200px;
+    display: flex;
+    margin: auto;
+  }
+  .samarbejder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
   .h-forbrugsrejse {
     position: relative;
     top: 30%;
