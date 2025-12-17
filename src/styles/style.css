@@ -337,7 +337,7 @@ li a:hover {
   align-items: center;
   text-align: center;
   color: white;
-  padding: 2%;
+  padding: 6%;
   margin: 2%;
 }
 a {
@@ -499,10 +499,11 @@ a {
     margin-inline: 35%;
     left: -10%;
   }
-  a :hover {
+  a:hover {
     transform: scale(1.02);
     transition: 0.3s;
   }
+
   .forbrugsrejse-body {
     background-color: #21303f;
     background-image: url(/public/img/group30.png);
