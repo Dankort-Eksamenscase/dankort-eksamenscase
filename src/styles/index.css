@@ -19,6 +19,22 @@
   height: 610px;
 }
 
+.index-h1 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 20%;
+  margin-right: 50%;
+}
+.index-subheader {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin-right: 50%;
+}
+
 .index-photo-1 {
   position: absolute;
   left: 4%;
@@ -172,10 +188,27 @@
     top: 23%;
   }
 
+  .index-h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 19%;
+    margin-right: 64%;
+  }
+
+  .index-subheader {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    margin-right: 64%;
+  }
+
   .marketingsstrategier-knap {
     position: absolute;
     bottom: 10%;
-    left: 12%;
+    left: 11%;
     padding: 20px 79px;
     background-color: #e21e27;
     color: #ffffff;
