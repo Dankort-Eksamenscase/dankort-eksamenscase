@@ -45,40 +45,62 @@ const { Marketingsstrategier } = Astro.props;
       <div class="ks">
         <h3 class="ksh3">{Marketingsstrategier.kolonne1header}</h3>
         <p>{Marketingsstrategier.kolonne1tekst}</p>
-        <h4>Spot det i hverdagen:</h4>
-        <ul>
-          <li>{Marketingsstrategier.kolonne1ul1}</li>
-          <li>{Marketingsstrategier.kolonne1ul2}</li>
-          <li>{Marketingsstrategier.kolonne1ul3}</li>
-        </ul>
+        <div class="ul-ned">
+          <h4>Spot det i hverdagen:</h4>
+          <ul>
+            <li>{Marketingsstrategier.kolonne1ul1}</li>
+            <li>{Marketingsstrategier.kolonne1ul2}</li>
+            <li>{Marketingsstrategier.kolonne1ul3}</li>
+          </ul>
+        </div>
       </div>
       <div>
         <img class="dynamisk-img" src={Marketingsstrategier.kolonne1img} alt="kolonne billede af x" />
       </div>
     </div>
     <div class="ks-container">
-      <img class="dynamisk-img" src={Marketingsstrategier.kolonne2img} alt="kolonne billede af x" />
-      <div class="ks">
-        <h3 class="ksh3">{Marketingsstrategier.kolonne2header}</h3>
-        <p>{Marketingsstrategier.kolonne2tekst}</p>
-        <h4>Spot det i hverdagen:</h4>
-        <ul>
-          <li>{Marketingsstrategier.kolonne2ul1}</li>
-          <li>{Marketingsstrategier.kolonne2ul2}</li>
-          <li>{Marketingsstrategier.kolonne2ul3}</li>
-        </ul>
+      <div class="mobil">
+        <div class="ks">
+          <h3 class="ksh3">{Marketingsstrategier.kolonne2header}</h3>
+          <p>{Marketingsstrategier.kolonne2tekst}</p>
+          <div class="ul-ned">
+            <h4>Spot det i hverdagen:</h4>
+            <ul>
+              <li>{Marketingsstrategier.kolonne2ul1}</li>
+              <li>{Marketingsstrategier.kolonne2ul2}</li>
+              <li>{Marketingsstrategier.kolonne2ul3}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img class="dynamisk-img1" src={Marketingsstrategier.kolonne2img} alt="kolonne billede af x" />
+      <div class="desktop">
+        <div class="ksd1">
+          <h3 class="ksh3">{Marketingsstrategier.kolonne2header}</h3>
+          <p>{Marketingsstrategier.kolonne2tekst}</p>
+          <div class="ul-ned">
+            <h4>Spot det i hverdagen:</h4>
+            <ul>
+              <li>{Marketingsstrategier.kolonne2ul1}</li>
+              <li>{Marketingsstrategier.kolonne2ul2}</li>
+              <li>{Marketingsstrategier.kolonne2ul3}</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="ks-container">
       <div class="ks">
         <h3 class="ksh3">{Marketingsstrategier.kolonne3header}</h3>
         <p>{Marketingsstrategier.kolonne3tekst}</p>
-        <h4>Spot det i hverdagen:</h4>
-        <ul class="dynamisk-ul">
-          <li>{Marketingsstrategier.kolonne3ul1}</li>
-          <li>{Marketingsstrategier.kolonne3ul2}</li>
-          <li>{Marketingsstrategier.kolonne3ul3}</li>
-        </ul>
+        <div class="ul-ned">
+          <h4>Spot det i hverdagen:</h4>
+          <ul class="dynamisk-ul">
+            <li>{Marketingsstrategier.kolonne3ul1}</li>
+            <li>{Marketingsstrategier.kolonne3ul2}</li>
+            <li>{Marketingsstrategier.kolonne3ul3}</li>
+          </ul>
+        </div>
       </div>
       <img class="dynamisk-img" src={Marketingsstrategier.kolonne3img} alt="kolonne billede af x" />
     </div>
