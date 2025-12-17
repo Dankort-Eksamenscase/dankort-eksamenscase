@@ -3,6 +3,21 @@
   margin: 0;
   padding: 0;
 }
+.nav__links .dropdown-content {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 5%;
+  padding-bottom: 25%;
+}
+.dropdown-content {
+  padding-bottom: 5%;
+}
+.nav__links .dropdown.open .dropdown-content {
+  display: flex;
+  text-align: center;
+}
+
 p {
   font-size: 20px;
 }
@@ -238,6 +253,7 @@ li a:hover {
 .nav__logo img {
   width: 90px;
   height: auto;
+  padding-left: 2%;
 }
 
 .nav__burger {
@@ -263,7 +279,7 @@ li a:hover {
   flex-direction: column;
   gap: 2rem;
   background: #f5f0e7;
-  padding: 2rem;
+  padding-right: 5%;
   position: fixed;
   top: 0;
   right: -100%;
@@ -361,6 +377,19 @@ a {
     text-align: left;
     margin-bottom: 10%;
     font-size: x-large;
+  }
+  .nav__links .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background: #e21e27;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav__links .dropdown:hover .dropdown-content {
+    display: flex;
   }
 
   .modstå-ks {
@@ -489,9 +518,9 @@ a {
     position: static;
     height: auto;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
     background: none;
-    padding: 0;
+    padding-right: 5%;
     width: auto;
     justify-content: flex-end;
   }
