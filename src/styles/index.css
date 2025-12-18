@@ -128,17 +128,6 @@
   position: relative; /* vigtigt */
 }
 
-.gul-kasse-2-h2::after {
-  content: "";
-  position: absolute;
-  top: 48px;
-  right: 23px;
-  width: 30px;
-  height: 30px;
-  background-color: #ffd998;
-  transform: skewX(63deg);
-}
-
 .gul-kasse-2-p {
   background-color: #ffd998;
   padding: 20px;
@@ -281,17 +270,6 @@
     margin-left: 1%;
     margin-top: 3%;
     position: relative;
-  }
-
-  .gul-kasse-2-h2::after {
-    content: "";
-    position: absolute;
-    top: 60px;
-    right: -15px;
-    width: 30px;
-    height: 30px;
-    background-color: #ffd998;
-    transform: skewX(57deg);
   }
 
   .gul-kasse-2-p {
