@@ -207,6 +207,17 @@ li {
   color: white;
   text-align: left;
 }
+
+.h-forbrugsrejse {
+  text-align: center;
+  color: white;
+  margin-top: 35%;
+}
+.h2-forbrugsrejse {
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+}
 .footer-text {
   color: white;
   font-size: xx-large;
@@ -529,12 +540,23 @@ a:hover {
     margin-bottom: 5%;
     padding-bottom: 5%;
   }
+
   .h-forbrugsrejse {
+    text-align: left;
+    margin-top: 0;
     position: relative;
     top: 30%;
     padding-right: 50%;
     left: 5%;
     color: white;
+  }
+  .h2-forbrugsrejse {
+    position: relative;
+    top: 30%;
+    padding-right: 50%;
+    left: 5%;
+    color: white;
+    text-align: left;
   }
 
   .ksd1 p {
